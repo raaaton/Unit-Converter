@@ -35,7 +35,6 @@ body {
     align-items: center;
     width: clamp(300px, 80%, 600px);
     margin: 50px;
-    border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
@@ -46,6 +45,7 @@ body {
     justify-content: center;
     padding: 25px;
     width: 100%;
+    border-top-left-radius: 8px;
 }
 
 .input-part h1 {
