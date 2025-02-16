@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background: #1C1C1C;
+    --foreground1: #1F2937;
+    --foreground2: #273549;
+    --accent: #6943FF;
+    --accent2: #B295FF;
+    --accent3: #CCC1FF;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background);
+    color: white;
+}
+
+.main-content {
+    background-color: var(--foreground1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(300px, 80%, 600px);
+    margin: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.input-part {
+    background-color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+}
+
+.input-part h1 {
+
+    margin: 20px 0 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-part form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.input-part form input, .input-part form button {
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+
+.input-part input[type="text"] {
+    color: white;
+    background-color: var(--accent);
+    border: 2px solid var(--accent2);
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    text-align: center;
+    appearance: textfield;
+    -moz-appearance: textfield;
+
+    transition: background-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: #b195ff48;
+}
+
+.input-part button {
+    color: var(--background);
+    background-color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+    transition: background-color 0.2s ease;
+}
+
+.input-part button:hover {
+    background-color: #ccc1ff;
+    cursor: pointer;
+}
+
+.input-part form {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-part {
+    width: 100%;
+    padding: 30px
+}
+
+.card {
+    background-color: var(--foreground2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 30px 0 20px 0;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--accent3);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
