@@ -110,6 +110,7 @@ input[type="text"]:focus {
 
 .result-part {
     background-color: var(--foreground1);
+    border-bottom-right-radius: 16px;
     width: 100%;
     padding: 30px
 }
